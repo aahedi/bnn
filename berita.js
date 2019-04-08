@@ -1,5 +1,6 @@
 if(location.href==='http://beritanarkoba.com/berita_cetak'){window.open('http://beritanarkoba.com/berita_cetak/create','_self');}
 if(location.href==='http://beritanarkoba.com/berita_cetak/create'){
+  document.addEventListener("DOMContentLoaded", function(){
 /*document.getElementsByName("link")[0].style.display="none";
 document.getElementsByName("kontributor")[0].style.display="none";
 document.getElementsByName("editor")[0].style.display="none";
@@ -32,12 +33,7 @@ document.getElementsByName("komentar")[0].style.visibility="hidden";
 alert('http://beritanarkoba.com/berita_online/create');
 */
 
-var css = '.form-group {margin-bottom:0;}
-.md-editor,.md-input{display:none;height:0px;}
-.inner-wrapper{padding:0px;}
-/*#sidebar-left{display:none;}*/
-input[type="text"]{width: 170px;}
-.btn-default, .btn-info{display:none;}',
+var css = '.form-group {margin-bottom:0;}.md-editor,.md-input{display:none;height:0px;}.inner-wrapper{padding:0px;}input[type="text"]{width: 170px;}.btn-default, .btn-info{display:none;}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
@@ -50,11 +46,12 @@ if (style.styleSheet){
 } else {
   style.appendChild(document.createTextNode(css));
 }
-
+  })
 }
 
 if(location.href==='http://beritanarkoba.com/berita_online'){window.open('http://beritanarkoba.com/berita_online/create','_self');}
 if(location.href==='http://beritanarkoba.com/berita_online/create'){
+  document.addEventListener("DOMContentLoaded", function(){
 document.getElementsByName("link")[0].style.display="none";
 document.getElementsByName("kontributor")[0].style.display="none";
 document.getElementsByName("editor")[0].style.display="none";
@@ -83,11 +80,7 @@ document.getElementsByName("komentar")[0].style.visibility="hidden";
 alert('http://beritanarkoba.com/berita_online/create');
 */
 
-var css = '.form-group {margin-bottom:0;}
-.md-editor,.md-input{display:none;height:0px;}
-.inner-wrapper{padding:0px;}
-/*#sidebar-left{display:none;}*/
-input[type="text"]{width: 170px;}',
+var css = '.form-group {margin-bottom:0;}.md-editor,.md-input{display:none;height:0px;}.inner-wrapper{padding:0px;}input[type="text"]{width: 170px;}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
@@ -100,5 +93,5 @@ if (style.styleSheet){
 } else {
   style.appendChild(document.createTextNode(css));
 }
-
+})
 }
