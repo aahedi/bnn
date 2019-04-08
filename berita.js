@@ -12,7 +12,7 @@ document.getElementsByName("komentar")[0].style.display="none";
 document.getElementsByTagName("section")[0].style.marginTop="-100px";
 document.getElementsByTagName("section")[0].style.marginLeft="-50px";
 
-$("#tanggal").val('2017-12-09');
+//$("#tanggal").val('2017-12-09');
 document.getElementsByName("klasifikasi")[0].value="1";
 document.getElementsByName("sumber_berita")[0].value="3";
 //$("input[name='judul']").focus();
@@ -61,7 +61,7 @@ document.getElementsByTagName("section")[0].style.marginTop="-100px";
 document.getElementsByTagName("section")[0].style.marginLeft="-50px";
 
 $("#isi").parents('.md-editor').remove();
-$("#tanggal").val('2017-12-20');
+//$("#tanggal").val('2017-12-20');
 //$("input[name='judul']").focus();
 
 $("input").on('keyup', function(e) {
