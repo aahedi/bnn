@@ -83,9 +83,22 @@ document.getElementsByName("komentar")[0].style.visibility="hidden";
 alert('http://beritanarkoba.com/berita_online/create');
 */
 
-}
-.form-group {margin-bottom:0;}
+var css = '.form-group {margin-bottom:0;}
 .md-editor,.md-input{display:none;height:0px;}
 .inner-wrapper{padding:0px;}
 /*#sidebar-left{display:none;}*/
-input[type="text"]{width: 170px;}
+input[type="text"]{width: 170px;}',
+    head = document.head || document.getElementsByTagName('head')[0],
+    style = document.createElement('style');
+
+head.appendChild(style);
+
+style.type = 'text/css';
+if (style.styleSheet){
+  // This is required for IE8 and below.
+  style.styleSheet.cssText = css;
+} else {
+  style.appendChild(document.createTextNode(css));
+}
+
+}
