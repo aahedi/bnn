@@ -1,3 +1,5 @@
+//https://chrome.google.com/webstore/detail/css-and-javascript-inject/ckddknfdmcemedlmmebildepcmneakaa
+
 if(location.href==='http://beritanarkoba.com/berita_cetak'){window.open('http://beritanarkoba.com/berita_cetak/create','_self');}
 if(location.href==='http://beritanarkoba.com/berita_cetak/create'){
   document.addEventListener("DOMContentLoaded", function(){
